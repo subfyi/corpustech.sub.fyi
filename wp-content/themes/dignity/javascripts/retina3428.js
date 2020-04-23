@@ -12,7 +12,7 @@
   var root = (typeof exports == 'undefined' ? window : exports);
 
   var config = {
-    // Ensure Content-Type is an image before trying to load @2x image
+    // Ensure Content-Type is an image before trying to load  image
     // https://github.com/imulus/retinajs/pull/45)
     check_mime_type: true
   };
@@ -67,7 +67,7 @@
       this.at_2x_path = at_2x_path;
       this.perform_check = false;
     } else {
-      this.at_2x_path = path.replace(/\.\w+$/, function(match) { return "@2x" + match; });
+      this.at_2x_path = path.replace(/\.\w+$/, function(match) { return  match; });
       this.perform_check = true;
     }
   }
